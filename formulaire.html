@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="agenda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <article class="FORMU">
+        <div id="titre">ADD AN EVENT</div>
+    <div class="formulaire">
+        <form action="agenda.html" method="post">
+            <div class="selector">
+                <label for="start">Day :</label>
+
+                <br><input type="date" id="start" name="trip-start"
+                value="auto"
+                min="2021-01-01" max="2022-12-31">
+            </div>
+            <div class="selector">
+                <label for="appt">Hour :</label>
+
+                <br><input type="time" id="appt" name="appt"
+                    min="07:00" max="21:00" required>
+            </div>
+            <div class="selector">
+            <label for="cate-select">Choose a category :</label>
+
+                <br><select name="category" id="cat-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="personal">PERSONAL</option>
+                    <option value="friends">FRIENDS</option>
+                    <option value="family">FAMILY</option>
+                    <option value="work">WORK</option>
+                    <option value="gym">GYM</option>
+                </select></div>
+            <div class="selector">
+                <label for="msg">Event :</label>
+                <br><textarea id="msg" name="user_message"></textarea>
+            </div>
+        </form>
+    </div>
+    <a href="agenda.html"><div id="place"><button class="button" type="button">ADD ME</button></a>
+    </div>
+</article>
+
+</main>
+</body>
+</html>
 
